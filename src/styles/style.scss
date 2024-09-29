@@ -1,0 +1,61 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+
+// Start : Includes
+//======================================//
+
+@import "./includes/variables";
+@import "./breakpoints/breakpoints";
+@import "./includes/header";
+@import "./includes/footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  position: absolute;
+  width:100%;
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  @include media-min-md{
+    // width:50%;
+  }
+  .child {
+    position: relative;
+    left: 16vh;
+    top: 29vh;
+    @include media-min-md{
+      left: 57vh;
+      width:30%
+    }
+    h4{
+      font-size: 15px;
+      text-align: center;
+      @include media-min-md{
+       font-size: 20px;
+      }
+    }
+  }
+}
+
+
+.box{
+  border: solid black 1px;
+  width:50px;
+  height:50px;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
